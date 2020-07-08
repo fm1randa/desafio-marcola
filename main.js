@@ -1,5 +1,7 @@
-var xhr = new XMLHttpRequest();
-
-xhr.open("GET", "https://reqres.in/api/users");
-xhr.send(null);
-
+axios.get("https://reqres.in/api/users")
+    .then(function(response){
+        console.log(response);
+    })
+    .catch(function(error){
+        console.warn(error);
+    });
