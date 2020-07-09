@@ -50,7 +50,7 @@ axios.get("https://reqres.in/api/users")
                 tdactions.appendChild(icon3);
                 colunas[i].appendChild(tdactions);
             }
-            else if (first_name.length > 5){
+            else if (first_name.length >= 5){
                 icon = document.createElement("i");
                 icon.classList.add("fab");
                 icon.classList.add("fa-apple");
