@@ -6,7 +6,7 @@ axios.get("https://reqres.in/api/users")
         for (var i = 0; i < tamanho; i++){
             tr = document.createElement("tr");
             tbody.appendChild(tr);
-            console.log("tr adicionado");
+            //console.log("tr adicionado");
         }
 
         colunas = tbody.getElementsByTagName("tr");
@@ -32,6 +32,37 @@ axios.get("https://reqres.in/api/users")
             textolname = document.createTextNode(response.data.data[i].last_name);
             tdlname.appendChild(textolname);
             colunas[i].appendChild(tdlname);
+
+            tdactions = document.createElement("td");
+            //console.log(response.data.data[i].first_name, response.data.data[i].first_name.length);
+            first_name = response.data.data[i].first_name;
+            if(first_name.length < 5){
+                //spani = document.createElement("span");
+                icon = document.createElement("i");
+                icon.classList.add("fas");
+                icon.classList.add("fa-apple-alt");
+                tdactions.appendChild(icon);
+                colunas[i].appendChild(tdactions);
+
+                icon3 = document.createElement("i");
+                icon3.classList.add("fab");
+                icon3.classList.add("fa-buromobelexperte");
+                tdactions.appendChild(icon3);
+                colunas[i].appendChild(tdactions);
+            }
+            else if (first_name.length > 5){
+                icon = document.createElement("i");
+                icon.classList.add("fab");
+                icon.classList.add("fa-apple");
+                tdactions.appendChild(icon);
+                colunas[i].appendChild(tdactions);
+
+                icon3 = document.createElement("i");
+                icon3.classList.add("fab");
+                icon3.classList.add("fa-buromobelexperte");
+                tdactions.appendChild(icon3);
+                colunas[i].appendChild(tdactions);
+            }
         }
 
 
