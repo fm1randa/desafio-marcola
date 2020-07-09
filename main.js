@@ -50,7 +50,7 @@ axios.get("https://reqres.in/api/users")
 
                 icon3 = document.createElement("i");
                 //icon3.setAttribute("style", "font-size: 25px; cursor: pointer");
-                icon3.setAttribute("onclick", "window.open('" + response.data.data[i].avatar +"')");
+                //icon3.setAttribute("onclick", "window.open('" + response.data.data[i].avatar +"')");
                 icon3.classList.add("fab");
                 icon3.classList.add("fa-buromobelexperte");
                 icon3.style.color = "rgb(197, 197, 197)";
@@ -69,7 +69,7 @@ axios.get("https://reqres.in/api/users")
 
                 icon3 = document.createElement("i");
                 //icon3.setAttribute("style", "font-size: 25px; cursor: pointer");
-                //icon3.setAttribute("onclick", "window.open('" + response.data.data[i].avatar +"')");
+                icon3.setAttribute("onclick", "window.open('" + response.data.data[i].avatar +"')");
                 icon3.classList.add("fab");
                 icon3.classList.add("fa-buromobelexperte");
                 tdactions.appendChild(icon3);
