@@ -12,6 +12,7 @@ axios.get("https://reqres.in/api/users")
         colunas = tbody.getElementsByTagName("tr");
         tamanhocol = colunas.length;
 
+//PREENCHIMENTO DA TABELA COM OS DADOS DA API
         for (var i = 0; i < tamanhocol; i++){
             th = document.createElement("th");
             textoid = document.createTextNode(response.data.data[i].id);
@@ -33,6 +34,7 @@ axios.get("https://reqres.in/api/users")
             tdlname.appendChild(textolname);
             colunas[i].appendChild(tdlname);
 
+//INSERÇÃO DOS ÍCONES CONFORME A REGRA DO DESAFIO
             tdactions = document.createElement("td");
             //console.log(response.data.data[i].first_name, response.data.data[i].first_name.length);
             first_name = response.data.data[i].first_name;
@@ -65,9 +67,11 @@ axios.get("https://reqres.in/api/users")
 
                 icon3 = document.createElement("i");
                 //icon3.setAttribute("style", "font-size: 25px; cursor: pointer");
-                icon3.setAttribute("onclick", "window.open('" + response.data.data[i].avatar +"')");
+                //icon3.setAttribute("onclick", "window.open('" + response.data.data[i].avatar +"')");
                 icon3.classList.add("fab");
                 icon3.classList.add("fa-buromobelexperte");
+                icon3.style.color = "rgb(197, 197, 197)";
+                icon3.style.cursor = "default";
                 tdactions.appendChild(icon3);
                 colunas[i].appendChild(tdactions);
             }
