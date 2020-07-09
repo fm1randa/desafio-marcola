@@ -1,14 +1,16 @@
+i {
+    margin: 0 5px;
+}
+
 i.fa-apple-alt {
-    font-size: 20px;
-    margin: 8px;
+    font-size: 26px;
 }
 
 i.fa-buromobelexperte {
     font-size: 25px;
     cursor: pointer;
-}
+} 
 
 i.fa-apple {
-    font-size: 25px;
-    margin: 8px;
+    font-size: 30px;
 }
