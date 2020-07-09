@@ -38,29 +38,43 @@ axios.get("https://reqres.in/api/users")
             first_name = response.data.data[i].first_name;
             if(first_name.length < 5){
                 //spani = document.createElement("span");
+                div = document.createElement("div");
+                div.setAttribute("style", "font-size: 20px;");
                 icon = document.createElement("i");
                 icon.classList.add("fas");
                 icon.classList.add("fa-apple-alt");
-                tdactions.appendChild(icon);
+                icon.classList.add("fa-lg");
+                div.appendChild(icon);
+                tdactions.appendChild(div);
                 colunas[i].appendChild(tdactions);
 
+                div2 = document.createElement("div");
+                div2.setAttribute("style", "font-size: 25px;");
                 icon3 = document.createElement("i");
                 icon3.classList.add("fab");
                 icon3.classList.add("fa-buromobelexperte");
-                tdactions.appendChild(icon3);
+                div2.appendChild(icon3);
+                tdactions.appendChild(div2);
                 colunas[i].appendChild(tdactions);
             }
             else if (first_name.length >= 5){
+                div = document.createElement("div");
+                div.setAttribute("style", "font-size: 25px;");
                 icon = document.createElement("i");
                 icon.classList.add("fab");
                 icon.classList.add("fa-apple");
-                tdactions.appendChild(icon);
+                icon.classList.add("fa-lg");
+                div.appendChild(icon);
+                tdactions.appendChild(div);
                 colunas[i].appendChild(tdactions);
 
+                div2 = document.createElement("div");
+                div2.setAttribute("style", "font-size: 25px;");
                 icon3 = document.createElement("i");
                 icon3.classList.add("fab");
                 icon3.classList.add("fa-buromobelexperte");
-                tdactions.appendChild(icon3);
+                div2.appendChild(icon3);
+                tdactions.appendChild(div2);
                 colunas[i].appendChild(tdactions);
             }
         }
