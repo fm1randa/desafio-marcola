@@ -1,3 +1,12 @@
+.disable {
+    color: rgb(197, 197, 197);
+    cursor: default;
+}
+
+.enable {
+    cursor: pointer;
+}
+
 i {
     margin: 0 5px;
 }
@@ -8,7 +17,6 @@ i.fa-apple-alt {
 
 i.fa-buromobelexperte {
     font-size: 25px;
-    cursor: pointer;
 } 
 
 i.fa-apple {
