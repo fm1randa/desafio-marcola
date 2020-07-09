@@ -39,15 +39,15 @@ axios.get("https://reqres.in/api/users")
             if(first_name.length < 5){
                 //spani = document.createElement("span");
                 icon = document.createElement("i");
-                icon.setAttribute("style", "font-size: 20px;");
+                //icon.setAttribute("style", "font-size: 20px;");
                 icon.classList.add("fas");
                 icon.classList.add("fa-apple-alt");
-                icon.classList.add("fa-lg");
+                //icon.classList.add("fa-lg");
                 tdactions.appendChild(icon);
                 colunas[i].appendChild(tdactions);
 
                 icon3 = document.createElement("i");
-                icon3.setAttribute("style", "font-size: 25px; cursor: pointer");
+                //icon3.setAttribute("style", "font-size: 25px; cursor: pointer");
                 icon3.setAttribute("onclick", "window.open('" + response.data.data[i].avatar +"')");
                 icon3.classList.add("fab");
                 icon3.classList.add("fa-buromobelexperte");
@@ -56,15 +56,15 @@ axios.get("https://reqres.in/api/users")
             }
             else if (first_name.length >= 5){
                 icon = document.createElement("i");
-                icon.setAttribute("style", "font-size: 25px;");
+                //icon.setAttribute("style", "font-size: 25px;");
                 icon.classList.add("fab");
                 icon.classList.add("fa-apple");
-                icon.classList.add("fa-lg");
+                //icon.classList.add("fa-lg");
                 tdactions.appendChild(icon);
                 colunas[i].appendChild(tdactions);
 
                 icon3 = document.createElement("i");
-                icon3.setAttribute("style", "font-size: 25px; cursor: pointer");
+                //icon3.setAttribute("style", "font-size: 25px; cursor: pointer");
                 icon3.setAttribute("onclick", "window.open('" + response.data.data[i].avatar +"')");
                 icon3.classList.add("fab");
                 icon3.classList.add("fa-buromobelexperte");
