@@ -53,6 +53,8 @@ axios.get("https://reqres.in/api/users")
                 icon3.setAttribute("onclick", "window.open('" + response.data.data[i].avatar +"')");
                 icon3.classList.add("fab");
                 icon3.classList.add("fa-buromobelexperte");
+                icon3.style.color = "rgb(197, 197, 197)";
+                icon3.style.cursor = "default";
                 tdactions.appendChild(icon3);
                 colunas[i].appendChild(tdactions);
             }
@@ -70,8 +72,6 @@ axios.get("https://reqres.in/api/users")
                 //icon3.setAttribute("onclick", "window.open('" + response.data.data[i].avatar +"')");
                 icon3.classList.add("fab");
                 icon3.classList.add("fa-buromobelexperte");
-                icon3.style.color = "rgb(197, 197, 197)";
-                icon3.style.cursor = "default";
                 tdactions.appendChild(icon3);
                 colunas[i].appendChild(tdactions);
             }
